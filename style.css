@@ -1,0 +1,17 @@
+:root {
+  font-family: monospace;
+  font-size: 24px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td, table th {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 320px;
+}
