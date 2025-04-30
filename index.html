@@ -7,6 +7,73 @@
   </head>
   <body>
     <h1>Float</h1>
+
+    <h2>f16</h2>
+    <table>
+      <tr>
+        <td></td>
+        <th>Sign</th>
+        <th>Exponent</th>
+        <th>Mantissa</th>
+      </tr>
+      <tr>
+        <th>Value</th>
+        <td id="f16-s-val"></td>
+        <td id="f16-e-val"></td>
+        <td id="f16-m-val"></td>
+      </tr>
+      <tr>
+        <th>Encoded as</th>
+        <td id="f16-s-enc"></td>
+        <td id="f16-e-enc"></td>
+        <td id="f16-m-enc"></td>
+      </tr>
+      <tr>
+        <th>Binary</th>
+        <td>
+          <input type="checkbox" id="f16-s0"/>
+        </td>
+        <td>
+          <input type="checkbox" id="f16-e4"/>
+          <input type="checkbox" id="f16-e3"/>
+          <input type="checkbox" id="f16-e2"/>
+          <input type="checkbox" id="f16-e1"/>
+          <input type="checkbox" id="f16-e0"/>
+        </td>
+        <td>
+          <input type="checkbox" id="f16-m9"/>
+          <input type="checkbox" id="f16-m8"/>
+          <input type="checkbox" id="f16-m7"/>
+          <input type="checkbox" id="f16-m6"/>
+          <input type="checkbox" id="f16-m5"/>
+          <input type="checkbox" id="f16-m4"/>
+          <input type="checkbox" id="f16-m3"/>
+          <input type="checkbox" id="f16-m2"/>
+          <input type="checkbox" id="f16-m1"/>
+          <input type="checkbox" id="f16-m0"/>
+        </td>
+      </tr>
+      <tr>
+        <th>Decimal</th>
+        <td colspan="3">
+          <input type="text" id="f16-dec"/>
+        </td>
+      </tr>
+      <tr>
+        <th>Binary</th>
+        <td colspan="3">
+          <input type="text" id="f16-bin"/>
+        </td>
+      </tr>
+      <tr>
+        <th>Hexadecimal</th>
+        <td colspan="3">
+          <input type="text" id="f16-hex"/>
+        </td>
+      </tr>
+    </table>
+
+    <h2>f32</h2>
     <table>
       <tr>
         <td></td>
@@ -67,24 +134,135 @@
           <input type="checkbox" id="f32-m0"/>
         </td>
       </tr>
-    </table>
-    <table>
       <tr>
         <th>Decimal</th>
-        <td>
+        <td colspan="3">
           <input type="text" id="f32-dec"/>
         </td>
       </tr>
       <tr>
         <th>Binary</th>
-        <td>
+        <td colspan="3">
           <input type="text" id="f32-bin"/>
         </td>
       </tr>
       <tr>
         <th>Hexadecimal</th>
-        <td>
+        <td colspan="3">
           <input type="text" id="f32-hex"/>
+        </td>
+      </tr>
+    </table>
+
+    <h2>f64</h2>
+    <table>
+      <tr>
+        <td></td>
+        <th>Sign</th>
+        <th>Exponent</th>
+        <th>Mantissa</th>
+      </tr>
+      <tr>
+        <th>Value</th>
+        <td id="f64-s-val"></td>
+        <td id="f64-e-val"></td>
+        <td id="f64-m-val"></td>
+      </tr>
+      <tr>
+        <th>Encoded as</th>
+        <td id="f64-s-enc"></td>
+        <td id="f64-e-enc"></td>
+        <td id="f64-m-enc"></td>
+      </tr>
+      <tr>
+        <th>Binary</th>
+        <td>
+          <input type="checkbox" id="f64-s0"/>
+        </td>
+        <td>
+          <input type="checkbox" id="f64-e10"/>
+          <input type="checkbox" id="f64-e9"/>
+          <input type="checkbox" id="f64-e8"/>
+          <input type="checkbox" id="f64-e7"/>
+          <input type="checkbox" id="f64-e6"/>
+          <input type="checkbox" id="f64-e5"/>
+          <input type="checkbox" id="f64-e4"/>
+          <input type="checkbox" id="f64-e3"/>
+          <input type="checkbox" id="f64-e2"/>
+          <input type="checkbox" id="f64-e1"/>
+          <input type="checkbox" id="f64-e0"/>
+        </td>
+        <td>
+          <input type="checkbox" id="f64-m51"/>
+          <input type="checkbox" id="f64-m50"/>
+          <input type="checkbox" id="f64-m49"/>
+          <input type="checkbox" id="f64-m48"/>
+          <input type="checkbox" id="f64-m47"/>
+          <input type="checkbox" id="f64-m46"/>
+          <input type="checkbox" id="f64-m45"/>
+          <input type="checkbox" id="f64-m44"/>
+          <input type="checkbox" id="f64-m43"/>
+          <input type="checkbox" id="f64-m42"/>
+          <input type="checkbox" id="f64-m41"/>
+          <input type="checkbox" id="f64-m40"/>
+          <input type="checkbox" id="f64-m39"/>
+          <input type="checkbox" id="f64-m38"/>
+          <input type="checkbox" id="f64-m37"/>
+          <input type="checkbox" id="f64-m36"/>
+          <input type="checkbox" id="f64-m35"/>
+          <input type="checkbox" id="f64-m34"/>
+          <input type="checkbox" id="f64-m33"/>
+          <input type="checkbox" id="f64-m32"/>
+          <input type="checkbox" id="f64-m31"/>
+          <input type="checkbox" id="f64-m30"/>
+          <input type="checkbox" id="f64-m29"/>
+          <input type="checkbox" id="f64-m28"/>
+          <input type="checkbox" id="f64-m27"/>
+          <input type="checkbox" id="f64-m26"/>
+          <input type="checkbox" id="f64-m25"/>
+          <input type="checkbox" id="f64-m24"/>
+          <input type="checkbox" id="f64-m23"/>
+          <input type="checkbox" id="f64-m22"/>
+          <input type="checkbox" id="f64-m21"/>
+          <input type="checkbox" id="f64-m20"/>
+          <input type="checkbox" id="f64-m19"/>
+          <input type="checkbox" id="f64-m18"/>
+          <input type="checkbox" id="f64-m17"/>
+          <input type="checkbox" id="f64-m16"/>
+          <input type="checkbox" id="f64-m15"/>
+          <input type="checkbox" id="f64-m14"/>
+          <input type="checkbox" id="f64-m13"/>
+          <input type="checkbox" id="f64-m12"/>
+          <input type="checkbox" id="f64-m11"/>
+          <input type="checkbox" id="f64-m10"/>
+          <input type="checkbox" id="f64-m9"/>
+          <input type="checkbox" id="f64-m8"/>
+          <input type="checkbox" id="f64-m7"/>
+          <input type="checkbox" id="f64-m6"/>
+          <input type="checkbox" id="f64-m5"/>
+          <input type="checkbox" id="f64-m4"/>
+          <input type="checkbox" id="f64-m3"/>
+          <input type="checkbox" id="f64-m2"/>
+          <input type="checkbox" id="f64-m1"/>
+          <input type="checkbox" id="f64-m0"/>
+        </td>
+      </tr>
+      <tr>
+        <th>Decimal</th>
+        <td colspan="3">
+          <input type="text" id="f64-dec"/>
+        </td>
+      </tr>
+      <tr>
+        <th>Binary</th>
+        <td colspan="3">
+          <input type="text" id="f64-bin"/>
+        </td>
+      </tr>
+      <tr>
+        <th>Hexadecimal</th>
+        <td colspan="3">
+          <input type="text" id="f64-hex"/>
         </td>
       </tr>
     </table>

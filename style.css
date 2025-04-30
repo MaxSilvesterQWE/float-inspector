@@ -12,6 +12,16 @@ table td, table th {
   text-align: center;
 }
 
+table th:first-child {
+  text-align: left;
+}
+
 input[type="text"] {
   width: 320px;
+  font-family: monospace;
+  font-size: 24px;
+}
+
+table td:has(input[type="checkbox"]) {
+  font-size: 0;
 }
